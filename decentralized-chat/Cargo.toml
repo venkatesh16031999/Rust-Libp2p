@@ -1,0 +1,12 @@
+[package]
+name = "libp2p-demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libp2p = { version = "0.53.2", features = ["noise", "mdns", "tcp", "request-response", "yamux", "json", "ed25519", "identify", "serde", "tokio", "gossipsub"] }
+serde = "1.0.196"
+serde_json = "1.0.113"
+tokio = { version = "1.36.0", features = ["full"] }
